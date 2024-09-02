@@ -1,0 +1,12 @@
+.slidev-layout { 
+    @apply bg-[#e3345b] text-white 
+}
+
+html, :root, body {
+    @apply text-18px
+}
+* {
+    --slidev-code-font-size: 16pt;
+}
+
+h2 { @apply font-600 }
