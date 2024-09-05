@@ -48,7 +48,7 @@ lineNumbers: true
 
 > p5.js is a friendly tool for learning to code and make art. It is a free and open-source JavaScript library built by an inclusive, nurturing community. p5.js welcomes artists, designers, beginners, educators, and anyone else!
 
-> p5.js는 코딩과 예술 제작을 배우기 위한 친숙한 도구입니다. 포용적이고 육성적인 커뮤니티에서 구축한 무료 오픈소스 JavaScript 라이브러리입니다. 아티스트, 디자이너, 초보자, 교육자 등 누구나 p5.js를 사용할 수 있습니다!
+p5.js는 코딩과 예술 제작을 배우기 위한 친숙한 도구입니다. 포용적이고 육성적인 커뮤니티에서 구축한 무료 오픈소스 JavaScript 라이브러리입니다. 아티스트, 디자이너, 초보자, 교육자 등 누구나 p5.js를 사용할 수 있습니다!
 
 </v-clicks>
 
@@ -85,7 +85,7 @@ lineNumbers: true
 </v-clicks>
 
 ---
-class: text-center
+class: text-center font-bold text-2em
 ---
 
 # 빠르게 복습 && 모르는 내용 배우기
@@ -118,9 +118,20 @@ const PI = 3.14;
 
 ## 출력하기
 
-```js {all|1|2}
-console.log(1 + 3);
+```js {all|1|2|3}
+console.log(1 + 3, 5);
+console.log(-0.1)
 console.log("안녕, p5.js");
+```
+
+---
+
+
+```js {all|1|3|4}
+const PI = 3.14;
+
+console.log("반지름이 3인 원의 넓이는")
+console.log(3*3*PI, "입니다")
 ```
 
 ---
@@ -197,22 +208,38 @@ e %= 5;
 ```
 ````
 
+---
+
+```js {all|1-2|4-5|7-8}
+a = 10;
+console.log(a); // 10
+
+a += 10;
+console.log(a);
+
+a /= 10;
+console.log(a);
+```
 
 ---
 
 ## 비교 연산자
 두 값 중에서 무엇이 더 크고 작은지 비교
-```js {none|1-3,5|1-3,6|1-3,7|1-3,8|1-3,9}
+```js {all|1-3,5|1-3,6|1-3,7|1-3,8|1-3,9}
 const a = 10;
 const b = 15;
 const c = 15;
 
-console.log(a < b); // true
-console.log(b > a); // true
-console.log(b >= c); // true
-console.log(a <= c); // true
-console.log(b < c); // false;
+console.log(a < b); 
+console.log(b > a); 
+console.log(b >= c); 
+console.log(a <= c);
+console.log(b < c); 
 ```
+
+<!--
+마지믹 뻬거\ㅗ \\\ 침
+-->
 
 ---
 
@@ -226,7 +253,7 @@ $$
 10 \leq a < 20 
 $$
 
-- 컴퓨터는 멍청해서 연립 부등식을 풀이하지 못합니다!
+- 컴퓨터는 멍청해서 연립 부등식을 풀이 X
 
 $$
 a \geq 10 \text{ 그리고 } a < 20
@@ -243,6 +270,8 @@ console.log(10 <= a && a < 20)
 ```
 
 ---
+class: text-left
+---
 
 
 ## 문자열 붙이기
@@ -251,3 +280,23 @@ const a = '안녕';
 const b = '하세요';
 console.log(a + b); // 안녕하세요
 ```
+
+---
+
+## 원래는... 조금 더 배워야 하지만
+
+<v-clicks>
+
+- 함수(Function)
+- 배열(Array)
+- 반복문(Loop)
+- Class
+- 등등...
+
+**아직 너무 많이 남아서.. 실습하면서 필요할때 보충합시다**
+
+</v-clicks>
+
+<style>
+h2 { @apply text-center block }
+</style>

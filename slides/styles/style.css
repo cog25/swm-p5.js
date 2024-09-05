@@ -3,10 +3,13 @@
 }
 
 html, :root, body {
-    @apply text-18px
+    @apply text-20px font-normal
 }
+
 * {
     --slidev-code-font-size: 16pt;
 }
 
-h2 { @apply font-600 }
+h1, h2, h3, h4, h5, h6, h7 { 
+    @apply font-bold;
+ }
