@@ -3,7 +3,7 @@
 }
 
 html, :root, body {
-    @apply text-20px font-normal
+    @apply text-18px font-normal
 }
 
 * {

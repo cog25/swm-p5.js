@@ -335,7 +335,20 @@ h2 { @apply text-center block }
   }
 </style>
 
-<!-- 
- 다음: 파란색으로 된 Fork 버튼 클릭
+---
 
- -->
+```js {all|1-3|5-12}
+export function setup() {
+  createCanvas(400, 400);
+}
+
+export function draw() {
+  background("#f2f2f2");
+
+  stroke(0,0,0);
+  fill(255,255,255);
+  
+  circle(width/2, height/2, 100);
+}
+
+```
