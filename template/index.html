@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5.js App - SWM 2024</title>
+  </head>
+  <body>
+    <script type="module">
+      import "./node_modules/p5/lib/p5.js"
+      import { mountFlex } from "./p5.flex.mjs";
+      mountFlex(window)
+
+      import * as sketch from "./src/sketch.js";
+      Object.assign(window, sketch);
+    </script>
+  </body>
+</html>
