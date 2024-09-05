@@ -29,7 +29,12 @@ lineNumbers: true
 
 </a>
 
-[![Open in StackBlitz](https://img.shields.io/badge/-Open%20in%20StackBlitz-1269D3?style=flat-square&logo=stackblitz)](https://stackblitz.com/github/cog25/swm-p5.js/tree/main/template?title=2024%20SWM%20p5.js%20실습)
+<a href="https://stackblitz.com/github/cog25/swm-p5.js/tree/main/template?title=2024%20SWM%20p5.js%20실습&file=src/sketch.js" class="color-transparent hover:!color-transparent">
+
+![Open in StackBlitz](https://img.shields.io/badge/-Open%20in%20StackBlitz-1269D3?style=flat-square&logo=stackblitz)
+
+</a>
+
 
 </div>
 
@@ -329,3 +334,8 @@ h2 { @apply text-center block }
     @apply h-2em;
   }
 </style>
+
+<!-- 
+ 다음: 파란색으로 된 Fork 버튼 클릭
+
+ -->
