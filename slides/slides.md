@@ -19,7 +19,19 @@ lineNumbers: true
 
 ## 시작하기
 
-20901 강태웅(23_stu0501@guri.hs.kr)
+20901 강태웅(23_stu0501@guri.hs.kr) <br/>
+
+<div class="flex gap-2">
+
+<a href="https://github.com/cog25/swm-p5.js" class="color-transparent hover:!color-transparent">
+
+![See in Github](https://img.shields.io/badge/-See%20in%20Github-181717?style=flat-square&logo=github)
+
+</a>
+
+[![Open in StackBlitz](https://img.shields.io/badge/-Open%20in%20StackBlitz-1269D3?style=flat-square&logo=stackblitz)](https://stackblitz.com/github/cog25/swm-p5.js/tree/main/template?title=2024%20SWM%20p5.js%20실습)
+
+</div>
 
 <style> 
   h1 { @apply font-800; }
@@ -299,4 +311,21 @@ console.log(a + b); // 안녕하세요
 
 <style>
 h2 { @apply text-center block }
+</style>
+
+---
+
+## 실습 시작하기
+
+1. 다음 주소에 Chrome으로 접속
+> https://p5js.swm.cog.moe/
+
+2. 이렇게 생긴 버튼 클릭
+
+> ![Open in StackBlitz](https://img.shields.io/badge/-Open%20in%20StackBlitz-1269D3?style=flat-square&logo=stackblitz)
+
+<style>
+  img[alt="Open in StackBlitz"] {
+    @apply h-2em;
+  }
 </style>
