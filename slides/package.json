@@ -3,7 +3,6 @@
   "type": "module",
   "private": true,
   "scripts": {
-    // "build": "slidev build && echo \"/ https://github.com/cog25/swm-p5.js 302\" >> ./dist/_redirects",
     "build": "slide build",
     "dev": "slidev --open",
     "export": "slidev export"
