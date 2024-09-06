@@ -338,6 +338,7 @@ h2 { @apply text-center block }
 ---
 
 ```js {all|1-3|5-12}
+
 export function setup() {
   createCanvas(400, 400);
 }
@@ -352,3 +353,14 @@ export function draw() {
 }
 
 ```
+
+
+---
+layout: iframe
+url: https://stackblitz.com/github/cog25/swm-p5.js/tree/main/template?embed=1&file=src%2Fsketch.js
+---
+
+embedded
+
+
+---
