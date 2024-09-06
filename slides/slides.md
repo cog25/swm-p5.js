@@ -105,6 +105,11 @@ class: text-center font-bold text-2em
 
 # 빠르게 복습 && 모르는 내용 배우기
 
+### 실습 시작하기
+
+1. 다음 주소에 Chrome으로 접속
+> https://node.new/
+
 
 ---
 
