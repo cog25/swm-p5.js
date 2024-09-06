@@ -341,10 +341,10 @@ h2 { @apply text-center block }
 
 export function setup() {
   createCanvas(400, 400);
+  background("#f2f2f2");
 }
 
 export function draw() {
-  background("#f2f2f2");
 
   stroke(0,0,0);
   fill(255,255,255);
@@ -364,3 +364,156 @@ embedded
 
 
 ---
+layout: two-cols
+---
+## 좌표 
+
+![](./img/Screenshot%202024-09-06%20at%2009-27-05%20p5.js%20Cheat%20Sheet.png)
+
+
+::right::
+
+- 지름이 20인 원을 canvas의 중앙, 좌상단, 우상단에 하나씩 그려보기.
+  - draw 함수 안에 작성.
+
+```js
+export function setup() {
+  createCanvas(400, 400);
+  background("#f2f2f2");
+}
+
+export function draw() {
+
+  stroke(0,0,0);
+  fill(255,255,255);
+  
+  // 여기서부터 코드 작성.
+}
+```
+
+---
+
+```js {11-13}
+export function setup() {
+  createCanvas(400, 400);
+  background('#f2f2f2');
+}
+
+export function draw() {
+
+  stroke(0, 0, 0);
+  fill(255, 255, 255);
+
+  circle(0, 0, 20);
+  circle(width / 2, height / 2, 20);
+  circle(width, height, 20);
+}
+```
+
+---
+
+- canvas의 너비: `width`
+- canvas의 높이: `hieght`
+
+> Q: 다른 것도 있을까요?
+---
+
+- 마우스의 x좌표: `mouseX`
+- 마우스의 y좌표: `mouseY`
+<br/>
+
+> Q. 마우스의 위치에 지름이 100인 원을 실시간으로 그리세요.
+
+---
+
+- something wrong
+```js {6-}
+export function setup() {
+  createCanvas(400, 400);
+  background('#f2f2f2');
+}
+
+export function draw() {
+  stroke(0, 0, 0);
+  fill(255, 255, 255);
+
+  circle(mouseX, mouseY, 100);
+}
+```
+
+---
+
+**Solution:**
+
+![](./img/p5js-doc-background.png)
+
+
+---
+
+````md magic-move
+```js
+export function setup() {
+  createCanvas(400, 400);
+  background('#f2f2f2');
+}
+
+export function draw() {
+  stroke(0, 0, 0);
+  fill(255, 255, 255);
+
+  circle(mouseX, mouseY, 100);
+}
+
+```
+```js
+export function setup() {
+  createCanvas(400, 400);
+  background('#f2f2f2');
+  background('#f2f2f2');
+}
+
+export function draw() {
+  stroke(0, 0, 0);
+  fill(255, 255, 255);
+
+  circle(mouseX, mouseY, 100);
+}
+```
+```js
+export function setup() {
+  createCanvas(400, 400);
+  background('#f2f2f2');
+}
+
+export function draw() {
+  stroke(0, 0, 0);
+  fill(255, 255, 255);
+
+  background('#f2f2f2');
+  circle(mouseX, mouseY, 100);
+}
+```
+````
+
+---
+layout: two-cols
+---
+## 이외에도 다양한 도형을 그릴 수 있어요
+
+```js
+line(x1, y1, x2, y2);
+
+ellipse(x, y, width, height);
+
+rect(x, y, width, height);
+
+arc(x, y, width, height, start, stop);
+```
+
+::right::
+
+![](./img/Screenshot%202024-09-06%20at%2009-53-49%20p5.js%20Cheat%20Sheet.png)
+
+--- 
+
+> Q: 도형들로 간단하게 그림 그려보기!
