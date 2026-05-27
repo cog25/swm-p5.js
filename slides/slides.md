@@ -19,7 +19,7 @@ lineNumbers: true
 
 ## 시작하기
 
-20901 강태웅(23_stu0501@guri.hs.kr) <br/>
+강태웅(me@cog.moe) <br/>
 
 <div class="flex gap-2">
 
@@ -326,7 +326,7 @@ h2 { @apply text-center block }
 ## 실습 시작하기
 
 1. 다음 주소에 Chrome으로 접속
-> https://p5js.swm.cog.moe/
+> https://swm-p5-js.pages.dev 
 
 2. 이렇게 생긴 버튼 클릭
 
